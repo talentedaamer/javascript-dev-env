@@ -2,7 +2,11 @@
 	"name": "javascript-dev-env",
 	"version": "1.0.0",
 	"description": "JavaScript development environment",
-	"scripts": {},
+	"scripts": {
+		"prestart": "node buildScripts/startMessage.js",
+		"start": "node buildScripts/srcServer.js",
+		"share": "ls --port 3030"
+	},
 	"author": "Aamer Shahzad",
 	"license": "GPL",
 	"dependencies": {
